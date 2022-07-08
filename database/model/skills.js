@@ -1,5 +1,5 @@
 const { Sequelize, Model } = require('sequelize');
-const sequelize = require('../index')
+const sequelize = require('../index');
 
 class Skills extends Model {
     
@@ -19,10 +19,14 @@ Skills.init(
         description: {
             type: Sequelize.STRING,
             allowNull: true,
+        },
+        logo: {
+            type: Sequelize.STRING,
+            allowNull: true,
         }
     }, {
         sequelize,
         timestamps: false
-    });
+});
 
 module.exports = Skills;
