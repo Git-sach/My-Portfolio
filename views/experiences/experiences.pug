@@ -1,0 +1,20 @@
+doctype html
+html(lang="fr")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        //- link(rel='stylesheet', href='/css/skills.css')
+        title My Portfolio
+    body 
+        include ../includes/topbar.pug
+        H1 EXPERIENCES PROFECIONELLES
+        .content
+            ul
+                each experience in listeExperiences
+                    li
+                        p= experience.title
+                        p= experience.description
+                        p= experience.company
+                        p= experience.customer
+
+

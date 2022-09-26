@@ -14,14 +14,17 @@ exports.skillsListe = async (req, res, next) => {
 
 exports.shearchSkillsListe = async (req, res, next) => {
     const search = req.params.search;
-    if(search){
-        try {
+    try {
+        if(search !== "null"){
             const skills = await skillsShearch(search);
             const skills_library = await skillsSearchLibrary(search);
-            console.log('ok')
             res.render('skills/skills-liste', {skills, skills_library});
-        } catch(e) {
-            next(e);
+        } else {
+            const skills = await skillsListe();
+            const skills_library = await skillsLibraryListe();
+            res.render('skills/skills-liste', {skills, skills_library});
         }
+    } catch(e) {
+        next(e);
     }
 };

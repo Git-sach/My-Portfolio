@@ -4,6 +4,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     inputSearch.addEventListener('input', function (evt) {
         let search = evt.target.value;
+        if(search === ""){
+            search = "null"
+        }
         axios.get('/skills/search/' + search)
             .then(function (response) {
                 content.innerHTML = response.data;
