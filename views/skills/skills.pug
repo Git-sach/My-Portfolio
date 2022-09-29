@@ -9,9 +9,9 @@ html(lang="fr")
         title My Portfolio
     body 
         include ../includes/topbar.pug
-        H1 COMPETENCES
-        .inputSearch
-            input(type="text" value="search" class="search")
-        .content
+        .container
+            H1(class="titlePage") COMPETENCES
+            .inputSearch
+                input(type="text" value="" class="customInput" id="search")
             include skills-liste.pug
 

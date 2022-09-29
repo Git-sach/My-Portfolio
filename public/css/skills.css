@@ -1,3 +1,65 @@
+@import './common.css';
+
+.flexList {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.flexList .element {
+    width: 300px;
+    padding: 20px;
+}
+
+.flexList .element p {
+    text-align: justify;
+}
+
+.inputSearch {
+    text-align: start;
+    padding-left: 60px;
+    margin-bottom: 20px;
+}
+
+.customInput {
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: transparent;
+    background-image: url(/images/icones/icone_search.png);
+    background-position: 5px 5px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    border: 0.8px solid rgba(0, 0, 0, 0.31);
+    padding-left: 30px;
+}
+
 img {
     height: 80px;
+}
+
+.librairies_framworks_title {
+    text-align: start;
+    padding-left: 60px;
+    margin: 60px 0px 60px 0px;
+}
+
+.librairies_framworks_separator {
+    display: flex;
+    margin-top: 50px;
+    padding: 0px 60px 0px 60px;
+}
+
+.librairies_framworks_separator .librairies_framworks_img {
+    text-align: start;
+    height: 40px;
+    padding-right: 20px;
+}
+
+.librairies_framworks_separator .separator {
+    background-color: rgba(0, 0, 0, 0.31);
+    height: 0.5px;
+    width: 100%;
+    align-self: center; 
 }

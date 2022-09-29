@@ -1,0 +1,60 @@
+@font-face {
+	font-family: "lato-regular";
+	src: url('../fonts/lato/Lato-Regular.ttf');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "lato-light";
+	src: url('../fonts/lato/Lato-Light.ttf');
+	font-weight: bolder;
+}
+
+@font-face {
+	font-family: "lato-lighter";
+	src: url('../fonts/lato/Lato-Thin.ttf');
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: "lato-bold";
+	src: url('../fonts/lato/Lato-Bold.ttf');
+	font-weight: bolder;
+}
+
+:root {
+    --colorBackground: #EAEAEA;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	background: url(/images/background/backPortfolio.png) var(--colorBackground);
+    background-size: cover;
+    background-position: center 40px;
+}
+
+h1, h2, p, a, li{
+    font-family: 'lato-light';
+}
+
+ul {
+    list-style: none;
+}
+
+.titlePage {
+    text-align: center;
+    font-size: 52px;
+    letter-spacing: 0.27em;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+

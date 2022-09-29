@@ -1,22 +1,22 @@
-ul
-    each skill in skills
-        li
-            .skill
+
+div(id="content")
+    ul(class="flexList")
+        each skill in skills
+            li(class='element')
                 img(src=`${skill.logo}`, alt="")
-                p= skill.name
+                h2= skill.name
                 p= skill.description
 
-if skills_library.length > 0  
-    H2 Librairies & framwork
-    ul
+    if skills_library.length > 0  
+        H1(class="librairies_framworks_title") Librairies & Framworks
         each skill_library in skills_library
             if skill_library.Skills_libraries.length > 0
-                li
-                    .skill
-                        img(src=`${skill_library.logo}`, alt="")
-                        p= skill_library.name
-                        .libraries
-                            each librarie in skill_library.Skills_libraries
-                                img(src=`${librarie.logo}`, alt="")
-                                p= librarie.name
-                                p= librarie.description
+                .librairies_framworks_separator
+                    img(class="librairies_framworks_img" src=`${skill_library.logo}`, alt="")
+                    .separator
+                ul(class="flexList")
+                    each librarie in skill_library.Skills_libraries
+                        li(class='element')
+                            img(src=`${librarie.logo}`, alt="")
+                            h2= librarie.name
+                            p= librarie.description

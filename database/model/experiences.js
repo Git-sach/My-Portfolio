@@ -15,14 +15,29 @@ Experiences.init(
         title: {
             type: Sequelize.INTEGER
         },
+        image: {
+            type: Sequelize.STRING
+        },
         description: {
-            type: Sequelize.INTEGER
+            type: Sequelize.STRING
         },
         company: {
-            type: Sequelize.INTEGER
+            type: Sequelize.STRING
+        },
+        logo_company: {
+            type: Sequelize.STRING
         },
         customer: {
-            type: Sequelize.INTEGER
+            type: Sequelize.STRING
+        },
+        logo_customer: {
+            type: Sequelize.STRING
+        },
+        date_debut: {
+            type: Sequelize.DATE
+        },
+        date_fin: {
+            type: Sequelize.DATE
         }
     },{
         sequelize,
