@@ -89,12 +89,13 @@
     height: 30%;
     justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .logos_skills img{
     filter: grayscale(100%);
-    opacity: 80%;
-    height: 40px;
+    opacity: 60%;
+    height: 30px;
 }
 
 .right_side_carde {

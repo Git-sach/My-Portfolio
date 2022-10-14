@@ -2,7 +2,10 @@ const { Sequelize, Model } = require('sequelize');
 const sequelize = require('../index');
 
 class Experiences extends Model {
-
+    CRLFtoHTML(){
+        this.description = this.description.replace(/\n\r?/g, '<br>');
+        this.description = this.description.replace(/\t/g, '<dd>');// a revoir, faire a propre balise ??
+    }
 };
 
 Experiences.init(

@@ -21,12 +21,14 @@ html(lang="fr")
                                     img(src=`${experience.logo_customer}`, alt="")
                             .middle_side_carde
                                 .description
+                                    //Unescaped Buffered Code https://pugjs.org/language/code.html
                                     h2= experience.title
-                                    hr
-                                    p= experience.description
+                                    p!= experience.description
                                 .logos_skills
                                     each skill in experience.Skills
                                         img(src=`${skill.logo}`, alt="")
+                                    each library in experience.Skills_libraries
+                                        img(src=`${library.logo}`, alt="")
                         .right_side_carde
                             p= '12MOIS'
 

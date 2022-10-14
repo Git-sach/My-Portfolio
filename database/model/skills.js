@@ -2,7 +2,6 @@ const { Sequelize, Model } = require('sequelize');
 const sequelize = require('../index');
 
 class Skills extends Model {
-    
 }
 
 Skills.init(

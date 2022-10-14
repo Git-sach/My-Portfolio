@@ -6,6 +6,7 @@ const sequelizeConnection = new Sequelize(
     "Escalademroc69&", {
     dialect: "mysql",
     host: "localhost", 
+    logging: false,
     define: {
         freezeTableName: true
     }
