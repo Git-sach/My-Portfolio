@@ -24,6 +24,8 @@
 
 :root {
     --colorBackground: #EAEAEA;
+    --colorH2: #1f1f1f;
+    --colorP: #2b2b2b;
 }
 
 * {
@@ -38,6 +40,14 @@ body {
 
 h1, h2, p, a, li{
     font-family: 'lato-light';
+}
+
+h2 {
+    color: var(--colorH2);
+}
+
+p {
+    color: var(--colorP);
 }
 
 ul {
