@@ -54,6 +54,11 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: var(--colorP);
+}
+
 .titlePage {
     text-align: center;
     font-size: 52px;

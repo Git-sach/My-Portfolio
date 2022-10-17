@@ -1,0 +1,24 @@
+html(lang="fr")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet', href='/css/accueil.css')
+        script(src="/javascript/accueil/responsivImg.js")
+        title My Portfolio
+    body 
+        include ../includes/topbar.pug
+        .container
+            .left
+                .void
+                .titles
+                    h2(class='firstName')= 'ADRIEN'
+                    h2(class='lastName')= 'CHEYNET'
+                    p= 'Bienvenu sur mon profil'
+                .seeMore
+                    a(href="#")= 'En savoir plus'
+                    <svg width="6" height="13" viewBox="0 0 6 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.219612 0.236888C0.348987 0.085201 0.524361 0 0.707212 0C0.890062 0 1.06544 0.085201 1.19481 0.236888L5.79481 5.63689C5.92403 5.78876 5.9966 5.99464 5.9966 6.20929C5.9966 6.42394 5.92403 6.62981 5.79481 6.78169L1.19481 12.1817C1.13164 12.2613 1.05547 12.3251 0.970826 12.3694C0.886187 12.4136 0.794819 12.4374 0.702172 12.4394C0.609526 12.4413 0.517499 12.4213 0.431582 12.3805C0.345665 12.3398 0.267618 12.2792 0.202096 12.2022C0.136575 12.1253 0.0849223 12.0337 0.050219 11.9329C0.0155156 11.832 -0.00152726 11.724 0.000107382 11.6152C0.00174202 11.5064 0.0220208 11.3992 0.0597334 11.2998C0.097446 11.2005 0.15182 11.111 0.219612 11.0369L4.33201 6.20929L0.219612 1.38169C0.0903974 1.22981 0.0178188 1.02394 0.0178188 0.809287C0.0178188 0.594636 0.0903974 0.388763 0.219612 0.236888Z" fill="#4B6051"/>
+                    </svg>
+
+            .right 
+                img(class="profilImg" src="/images/accueil/me.png", alt="")

@@ -17,7 +17,6 @@ class Experiences extends Model {
         if(this.date_fin){
             date_fin = new Date(this.date_fin);
         }
-        console.log((date_fin - date_debut)/1000/60/60/24/30.4167);
         return this.convert_tow_charac(Math.floor((date_fin - date_debut)/1000/60/60/24/30.4167))
     }
 

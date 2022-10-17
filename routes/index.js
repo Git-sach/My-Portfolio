@@ -1,14 +1,12 @@
 const router = require('express').Router();
-const { skillsListe, shearchSkillsListe } = require('../controllers/skills');
-const { experiencesListe } = require('../controllers/experiences');
+const experiences_router = require('./experiences');
+const skills_router = require('./skills');
 
-router.get('/', (req, res) => {
-    res.end('hello');
+router.get('/', (req, res, next) => {
+    res.render('accueil/accueil')
 });
 
-router.get('/skills/search/:search', shearchSkillsListe);
-router.get('/skills', skillsListe);
-
-router.get('/experiences', experiencesListe)
+router.use('/skills', skills_router);
+router.use('/experiences', experiences_router);
 
 module.exports = router;
