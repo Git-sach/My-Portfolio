@@ -1,0 +1,67 @@
+nav ul{
+    margin: 0;
+}
+
+.nav {
+    height: 100%;
+    width: 250px;
+    top: 0;
+    right: -250px;
+    position: fixed;
+    transition: right 1s;
+    background-color: var(--colorNavBar);
+    box-shadow: inset 5px 0px 15px rgba(0, 0, 0, 0.10);
+}
+
+nav {
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    padding: 25%;
+}
+
+.logoNav {
+    width: 30px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+.NavOpen {
+    right: 0px;
+    transition: 1s;
+    transition-timing-function: var(--transitionOpenNav);
+}
+
+.firstBar{
+    transition: 1s;
+}
+.rotFirstBar{
+    transform: translate(10px, 1px) rotate(45deg);
+    transition: 1s;
+}
+
+.secondBar{
+    opacity: 1;
+    transition: 1s;
+}
+.removeSecondBar{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.thirdBar{
+    transition: 1s;
+}
+.rotThirdBar{
+    transform: translate(-18px, 11px) rotate(-45deg);
+    transition: 1s;
+}

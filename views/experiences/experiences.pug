@@ -6,32 +6,35 @@ html(lang="fr")
         link(rel='stylesheet', href='/css/experiences.css')
         title My Portfolio
     body 
-        include ../includes/topbar.pug
-        H1(class="titlePage") EXPERIENCES PROFECIONELLES
-        .container
-            ul(class='cards_container')
-                each experience in listeExperiences
-                    li(class='card_container_date')
-                        .card_container
-                            .left_side_carde
-                                img(src=`${experience.image}`, alt="")
-                                .logo_company
-                                    img(src=`${experience.logo_company}`, alt="")
-                                .logo_customer
-                                    img(src=`${experience.logo_customer}`, alt="")
-                            .middle_side_carde
-                                .description
-                                    h2= experience.title                 
-                                    <hr>
-                                    //Unescaped Buffered Code https://pugjs.org/language/code.html
-                                    p!= experience.description
-                                .logos_skills
-                                    each skill in experience.Skills
-                                        img(src=`${skill.logo}`, alt="")
-                                    each library in experience.Skills_libraries
-                                        img(src=`${library.logo}`, alt="")
-                        .right_side_carde
-                            p(class='number')= experience.number_of_months
-                            p(class='mois')= 'MOIS'
+        .page
+            .nav    
+                include ../includes/navigation.pug
+            .container
+                H1(class="titlePage") EXPERIENCES PROFECIONELLES
+                ul(class='cards_container')
+                    each experience in listeExperiences
+                        li(class='card_container_date')
+                            .card_container
+                                .left_side_carde
+                                    img(src=`${experience.image}`, alt="")
+                                    .logo_company
+                                        img(src=`${experience.logo_company}`, alt="")
+                                    .logo_customer
+                                        img(src=`${experience.logo_customer}`, alt="")
+                                .middle_side_carde
+                                    .description
+                                        h2= experience.title                 
+                                        <hr>
+                                        //Unescaped Buffered Code https://pugjs.org/language/code.html
+                                        p!= experience.description
+                                    .logos_skills
+                                        each skill in experience.Skills
+                                            img(src=`${skill.logo}`, alt="")
+                                        each library in experience.Skills_libraries
+                                            img(src=`${library.logo}`, alt="")
+                            .right_side_carde
+                                p(class='number')= experience.number_of_months
+                                p(class='mois')= 'MOIS'
+        script(src="/javascript/navigation/navigation.js")
 
 

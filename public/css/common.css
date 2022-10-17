@@ -1,3 +1,5 @@
+@import './navigation.css';
+
 @font-face {
 	font-family: "lato-regular";
 	src: url('../fonts/lato/Lato-Regular.ttf');
@@ -26,6 +28,9 @@
     --colorBackground: #EAEAEA;
     --colorH2: #1f1f1f;
     --colorP: #2b2b2b;
+
+	--transitionOpenNav: cubic-bezier(0.4, 0, 0.2, 1);
+	--colorNavBar: #7e9e874d;;
 }
 
 * {
@@ -33,9 +38,24 @@
 }
 
 body {
+    margin: 0;
+    position: relative;
+}
+
+.page {
 	background: url(/images/background/backPortfolio.png) var(--colorBackground);
     background-size: cover;
-    background-position: center 40px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: left 1s;
+}
+
+.pageNavOpen {
+    left: -250px;
+    transition: 1s;
+    transition-timing-function: var(--transitionOpenNav);
 }
 
 h1, h2, p, a, li{

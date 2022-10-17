@@ -8,10 +8,13 @@ html(lang="fr")
         script(src="/javascript/skills/skills.js")
         title My Portfolio
     body 
-        include ../includes/topbar.pug
-        .container
-            H1(class="titlePage") COMPETENCES
-            .inputSearch
-                input(type="text" value="" class="customInput" id="search")
-            include skills-liste.pug
+        .page
+            .nav
+                include ../includes/navigation.pug
+            .container
+                H1(class="titlePage") COMPETENCES
+                .inputSearch
+                    input(type="text" value="" class="customInput" id="search")
+                include skills-liste.pug
+        script(src="/javascript/navigation/navigation.js")
 

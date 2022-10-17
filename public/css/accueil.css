@@ -1,14 +1,33 @@
 @import './common.css';
 
+.page {
+    position: relative;
+}
+
+.nav {
+    position: relative;
+    height: auto;
+    width: auto;
+    right: 0;
+     
+}
+
 nav {
     position: absolute;
     width: 60%;
-    font-size: 21px;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 nav ul {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    gap: 0;
+    padding: 10px 40px;
+}
+
+.logoNav {
+    display: none;
 }
 
 .container {
