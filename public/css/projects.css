@@ -1,0 +1,135 @@
+@import './common.css';
+
+.containerProjects {
+    max-width: 1080px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+}
+
+.card {
+    Width: 500px;
+    Height: 280px;
+    position: relative;
+}
+
+.card img{
+    Width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: -4px -4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.card .description {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    width: 55%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card .description h2 {
+    font-size: 20px;
+    margin: 10px auto;
+}
+
+.card .description hr {
+    width: 80%;
+    border: none;
+    height: 0.5px;
+    background-color: #4444442f;
+}
+
+.card .description p {
+    font-size: 11px;
+    margin: 10px 10px;
+}
+
+.skills {
+    padding: 10px;
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    bottom: 0%; left: 0%;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0) 24.83%, rgba(217, 217, 217, 0.14) 80.21%, rgba(217, 217, 217, 0.26) 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 86px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222523;
+    border-radius: 5px;
+    padding: 3px 8px 3px 8px;
+}
+
+.skill img{
+    height: 80%;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(1) invert(1);
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.skill p{
+    margin: 0px;
+    font-size: 11px;
+    color: rgb(216, 216, 216);
+}
+
+.descriptionPage {
+    text-align: start;
+}
+
+.descriptionPage p{
+    font-family: 'lato-regular';
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.allSkills {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.allSkills .skill {
+    width: 100px;
+    height: 25.58px;
+    opacity: 60%;
+}
+
+.allSkills .skill p{
+    font-size: 15px;
+}
+
+.explainFilter {
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1080px) {
+    .cardsContainer {
+        justify-content: center;
+    }
+}

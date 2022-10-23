@@ -71,10 +71,6 @@
     margin-bottom: 0;
 }
 
-.middle_side_carde hr {
-    margin: 15px 0px;
-}
-
 .middle_side_carde p {
     text-align: justify;
     font-size: 15px; 
@@ -94,6 +90,7 @@
 }
 
 .middle_side_carde hr{
+    margin: 15px 0px;
     border: none;
     height: 0.5px;
     background-color: #4444442f;

@@ -3,7 +3,7 @@ html(lang="fr")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel='stylesheet', href='/css/experiences.css')
+        link(rel='stylesheet', href='/css/projects.css')
         title My Portfolio
     body 
         .page
@@ -11,7 +11,33 @@ html(lang="fr")
                 include ../includes/navigation.pug
             .container
                 H1(class="titlePage") PROJETS
+                .containerProjects
+                    .descriptionPage
+                        p= "From Web Components and UI/UX animations to React.JS, Redux, Vue.JS, and Node.JS. Check out my latest web software development portfolio projects."
+                    .allSkills
+                        each skill in allSkills
+                            a(class="skill" href="#" id=`${skill.id}`)
+                                img(src=`${skill.logo}`, alt="")
+                                p= skill.name
+                                .centrer
+                    .explainFilter
+                        p= "Showing all projects. Use the filter to list them by skill or technology."
+                    .cardsContainer
+                        each project in projects
+                            .card
+                                img(src=`${project.image}`, alt="")
+                                .description
+                                    h2= project.title
+                                    hr
+                                    p= project.description
+                                .skills
+                                    each skill in project.Skills
+                                        .skill
+                                            img(src=`${skill.logo}`, alt="")
+                                            p= skill.name
+                                            .centrer
 
         script(src="/javascript/navigation/navigation.js")
+        script(src="/javascript/projects/skillsFilter.js")
 
 

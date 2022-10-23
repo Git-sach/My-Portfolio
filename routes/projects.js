@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { projectsListe } = require('../controllers/project')
+const { projectsListe } = require('../controllers/projects')
 
     router.get('/', projectsListe);
 
