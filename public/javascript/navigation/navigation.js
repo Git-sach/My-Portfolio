@@ -6,7 +6,6 @@ let secondBar = document.querySelector('.secondBar').classList;
 let thirdBar = document.querySelector('.thirdBar').classList;
 
 document.querySelector('.logoNav').onclick = function(){
-    console.log('click');
     if(page.contains('pageNavOpen')){  
         page.remove('pageNavOpen'); 
         navbar.remove('NavOpen');

@@ -4,6 +4,7 @@ html(lang="fr")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel='stylesheet', href='/css/projects.css')
+        script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
         title My Portfolio
     body 
         .page
@@ -22,21 +23,7 @@ html(lang="fr")
                                 .centrer
                     .explainFilter
                         p= "Showing all projects. Use the filter to list them by skill or technology."
-                    .cardsContainer
-                        each project in projects
-                            .card
-                                img(src=`${project.image}`, alt="")
-                                .description
-                                    h2= project.title
-                                    hr
-                                    p= project.description
-                                .skills
-                                    each skill in project.Skills
-                                        .skill
-                                            img(src=`${skill.logo}`, alt="")
-                                            p= skill.name
-                                            .centrer
-
+                    include projects-liste.pug
         script(src="/javascript/navigation/navigation.js")
         script(src="/javascript/projects/skillsFilter.js")
 

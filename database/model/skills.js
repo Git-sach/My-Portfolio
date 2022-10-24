@@ -22,7 +22,10 @@ Skills.init(
         logo: {
             type: Sequelize.STRING,
             allowNull: true,
-        }
+        },
+        is_visible_projects: {
+            type: Sequelize.BOOLEAN
+        },
     }, {
         sequelize,
         timestamps: false

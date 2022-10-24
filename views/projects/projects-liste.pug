@@ -1,0 +1,14 @@
+div(class="cardsContainer", id="content")
+    each project in projects
+        .card
+            img(src=`${project.image}`, alt="")
+            .description
+                h2= project.title
+                hr
+                p= project.description
+            .skills
+                each skill in project.Skills
+                    .skill
+                        img(src=`${skill.logo}`, alt="")
+                        p= skill.name
+                        .centrer
