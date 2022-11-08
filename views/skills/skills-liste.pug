@@ -10,12 +10,12 @@ div(id="content")
     if skills_library.length > 0  
         H1(class="librairies_framworks_title") Librairies & Framworks
         each skill_library in skills_library
-            if skill_library.Skills_libraries.length > 0
+            if skill_library.skills_libraries.length > 0
                 .librairies_framworks_separator
                     img(class="librairies_framworks_img" src=`${skill_library.logo}`, alt="")
                     .separator
                 ul(class="flexList")
-                    each librarie in skill_library.Skills_libraries
+                    each librarie in skill_library.skills_libraries
                         li(class='element')
                             img(src=`${librarie.logo}`, alt="")
                             h2= librarie.name

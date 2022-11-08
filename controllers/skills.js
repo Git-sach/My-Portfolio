@@ -5,10 +5,10 @@ exports.skillsListe = async (req, res, next) => {
     try {
         const skills = await skillsListe();
         const skills_library = await skillsLibraryListe();
-        //res.send(skills_library)
+        // res.send(skills)
         res.render('skills/skills', {skills, skills_library});
     } catch(e) {
-        next(e);
+        console.log(e);
     }
 };
 

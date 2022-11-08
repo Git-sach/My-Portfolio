@@ -41,6 +41,7 @@ Experience_skills.init(
         }
     },{
         sequelize,
+        modelName: 'experience_skills',
         timestamps: null
 });
 

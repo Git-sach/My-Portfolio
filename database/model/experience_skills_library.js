@@ -9,14 +9,14 @@ class Experience_skills_library extends Model {
 
 Experience_skills_library.init(
     {
-        ExperienceId: {
+        experienceId: {
             type: Sequelize.INTEGER,
             references: {
               model: Experiences,
               key: 'id'
             }
         },
-        SkillsLibraryId: {
+        skillsLibraryId: {
             type: Sequelize.INTEGER,
             references: {
               model: Skills_library,
@@ -25,6 +25,7 @@ Experience_skills_library.init(
         }
     },{
         sequelize,
+        modelName: 'experience_skills_library',
         timestamps: null
 });
 

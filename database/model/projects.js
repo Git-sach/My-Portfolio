@@ -25,6 +25,7 @@ Projects.init({
     }
 },{
     sequelize,
+    modelName: 'projects',
     timestamps: false
 });
 

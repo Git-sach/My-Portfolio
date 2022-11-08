@@ -7,7 +7,7 @@ div(class="cardsContainer", id="content")
                 hr
                 p= project.description
             .skills
-                each skill in project.Skills
+                each skill in project.skills
                     .skill
                         img(src=`${skill.logo}`, alt="")
                         p= skill.name

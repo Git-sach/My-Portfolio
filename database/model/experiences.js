@@ -70,6 +70,7 @@ Experiences.init(
         }
     },{
         sequelize,
+        modelName: 'experiences',
         timestamps: false
 });
 

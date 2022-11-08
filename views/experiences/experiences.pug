@@ -3,9 +3,11 @@ html(lang="fr")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet', href='/css/loader.css')
         link(rel='stylesheet', href='/css/experiences.css')
         title My Portfolio
     body 
+        include ../includes/loader.pug
         .page
             .nav    
                 include ../includes/navigation.pug
@@ -28,13 +30,14 @@ html(lang="fr")
                                         //Unescaped Buffered Code https://pugjs.org/language/code.html
                                         p!= experience.description
                                     .logos_skills
-                                        each skill in experience.Skills
+                                        each skill in experience.skills
                                             img(src=`${skill.logo}`, alt="")
-                                        each library in experience.Skills_libraries
+                                        each library in experience.skills_libraries
                                             img(src=`${library.logo}`, alt="")
                             .right_side_carde
                                 p(class='number')= experience.number_of_months
                                 p(class='mois')= 'MOIS'
+        script(src="/javascript/loader/loader.js")
         script(src="/javascript/navigation/navigation.js")
 
 

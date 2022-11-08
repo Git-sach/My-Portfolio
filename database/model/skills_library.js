@@ -30,6 +30,7 @@ Skills_library.init({
         }
     },{
         sequelize,
+        modelName: 'skills_library',
         timestamps: false
 });
 

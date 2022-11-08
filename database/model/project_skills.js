@@ -25,6 +25,7 @@ Project_skills.init(
       }
   },{
         sequelize,
+        modelName: 'project_skills',
         timestamps: null
 });
 

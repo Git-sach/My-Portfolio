@@ -28,6 +28,7 @@ Skills.init(
         },
     }, {
         sequelize,
+        modelName: 'skills',
         timestamps: false
 });
 
