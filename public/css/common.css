@@ -46,7 +46,7 @@ body {
 
 .page {
 	background: url(/images/background/backPortfolio.png) var(--colorBackground);
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     width: 100%;
     top: 0;
@@ -101,5 +101,11 @@ a {
 @media only screen and (max-width: 768px){
     .titlePage {
         font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .titlePage {
+        font-size: 22px;
     }
 }

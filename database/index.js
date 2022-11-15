@@ -12,18 +12,6 @@ const sequelizeConnection = new Sequelize(
     }
 }); 
 
-// const sequelizeConnection = new Sequelize(
-//     "dbmaster", 
-//     "masteruser", 
-//     "Y1-edl=0tfD%5!^^x3,FFeusD=k.lmMX", {
-//     dialect: "mysql",
-//     host: "ls-646baf4f8af63120ffbf5667c4178e5a4f4166ee.ccv74xywnazg.eu-west-3.rds.amazonaws.com", 
-//     logging: false,
-//     define: {
-//         freezeTableName: true
-//     }
-// }); 
-
 (async () => {
     try {
         await sequelizeConnection.authenticate();
