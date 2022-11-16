@@ -1,10 +1,20 @@
+window.addEventListener('DOMContentLoaded', () => {
+    let profilImg = document.querySelector('.profilImg');
 
-window.addEventListener('resize', () => {
-    if((window.innerHeight / window.innerWidth) >= 0.5){
-        document.querySelector('.profilImg').style.width = '85%';
-        document.querySelector('.profilImg').style.height = 'auto';
+    risize(profilImg);
+
+    window.addEventListener('resize', () => {
+        risize(profilImg);
+    });
+
+})
+
+const risize = (element) => {
+    if((window.innerHeight / window.innerWidth) >= 0.5 && window.innerWidth > 768){
+        element.style.width = '85%';
+        element.style.height = 'auto';
     }else{
-        document.querySelector('.profilImg').style.width = 'auto';
-        document.querySelector('.profilImg').style.height = '85%';
+        element.style.width = 'auto';
+        element.style.height = '85%';
     }
-});
+}

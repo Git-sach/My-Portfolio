@@ -4,40 +4,41 @@
     position: relative;
 }
 
-.nav {
-    position: relative;
-    height: auto;
-    width: auto;
-    right: 0;
-     
+@media only screen and (min-width: 768px){
+
+    .nav {
+        position: relative;
+        height: auto;
+        width: auto;
+        right: 0;
+         
+    }
+    
+    nav {
+        position: absolute;
+        width: 60%;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 10px 40px;
+    }
+    
+    .logoNav {
+        display: none;
+    }
+    
 }
 
-nav {
-    position: absolute;
-    width: 60%;
-    font-size: 16px;
-    margin-top: 20px;
-}
-
-nav ul {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 0;
-    padding: 10px 40px;
-}
-
-.logoNav {
-    display: none;
-}
 
 .container {
     display: flex;
     flex-direction: row;
     height: 100%;
-}
-
-.left {
-    width: 40%;
 }
 
 .right {
@@ -59,6 +60,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 40%;
     height: 100%;
 }
 
@@ -88,14 +90,94 @@ nav ul {
 .seeMore{
     font-size: 21px;
     text-align: start;
-    margin-left: 30px;
     display: flex;
     margin: 0px 0px 30px 50px;
 }
+
 .seeMore a {
     margin: 6px 0px 12px 0px;
 }
 
 .seeMore svg {
     margin: auto 10px;
+}
+
+@media only screen and (max-width: 1024px){
+
+    .left .titles {
+        font-size: 30px;
+    }
+
+    .left .titles .firstName{
+        margin: 30px 0px;
+    }
+
+    .left .titles .lastName{
+        margin: 30px 0px;
+    }
+
+    .left .titles p{
+        font-size: 26px;
+        margin: 30px 0px;
+        margin-right: 12%;
+    }
+
+    nav {
+        font-size: 12px;
+    }
+
+    .seeMore{
+        font-size: 16px;
+        margin-left: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px){
+
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .left {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .right {
+        width: 100%;
+        height: 50%;
+    }
+
+    .right img{
+        height: 100%;
+    }
+
+    .left .titles {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .left .titles .firstName{
+        margin: 10px 0px;
+        margin-right: 0%;
+    }
+    
+    .left .titles .lastName{
+        margin: 10px 0px;
+        margin-right: 0%;
+    }
+
+    .left .titles p{
+        font-size: 18px;
+        margin: 10px 0px;
+    }
+
+    .seeMore{
+        font-size: 18px;
+        margin: 0px 0px 15px 15px;
+    }
+}
+
+@media only screen and (max-width: 425px){
 }
