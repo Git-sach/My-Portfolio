@@ -66,17 +66,17 @@ img {
 
 
 @media only screen and (max-width: 425px){
-    img {
+    /* img {
         height: 60px;
     }
 
     .flexList .element h2 {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .flexList .element p {
-        font-size: 12px;
-    }
+        font-size: 14px;
+    } */
 
     .customInput {
         height: 22.5px;
@@ -88,5 +88,15 @@ img {
 
     .librairies_framworks_title {
         font-size: 24px;
+        padding: 30px;
+    }
+
+    .flexList .element {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .librairies_framworks_separator {
+        padding: 0px 30px;
     }
 }
