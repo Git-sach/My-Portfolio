@@ -11,7 +11,6 @@
         height: auto;
         width: auto;
         right: 0;
-         
     }
     
     nav {
@@ -123,7 +122,7 @@
     }
 
     nav {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .seeMore{
@@ -177,7 +176,7 @@
 
     .seeMore{
         font-size: 18px;
-        margin: 0px 0px 15px 15px;
+        margin: 0px 0px 55px 15px;
     }
 
     .void {
