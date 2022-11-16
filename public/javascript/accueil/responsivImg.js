@@ -1,16 +1,18 @@
 window.addEventListener('DOMContentLoaded', () => {
     let profilImg = document.querySelector('.profilImg');
-
-    risize(profilImg);
-
+    if(window.innerWidth > 768){
+        resize(profilImg);
+    }
     window.addEventListener('resize', () => {
-        risize(profilImg);
+        if(window.innerWidth > 768){
+            resize(profilImg);
+        }
     });
 
 })
 
-const risize = (element) => {
-    if((window.innerHeight / window.innerWidth) >= 0.5 && window.innerWidth > 768){
+const resize = (element) => {
+    if((window.innerHeight / window.innerWidth) >= 0.5){
         element.style.width = '85%';
         element.style.height = 'auto';
     }else{
