@@ -142,6 +142,10 @@
 
 @media screen and (max-width: 545px) {
 
+    .cardsContainer {
+        gap: 30px;
+    }
+
     .card {
         Width: 100%;
         Height: auto;
