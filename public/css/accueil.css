@@ -154,35 +154,32 @@
     }
 
     .left .titles {
-        margin-top: 50px;
+        margin-top: 40px;
         font-size: 20px;
         text-align: center;
     }
     
     .left .titles .firstName{
-        margin: 10px 0px;
+        margin: 15px 0px;
         margin-right: 0%;
     }
     
     .left .titles .lastName{
-        margin: 10px 0px;
+        margin: 15px 0px;
         margin-right: 0%;
     }
 
     .left .titles p{
         font-size: 18px;
-        margin: 10px 0px;
+        margin: 15px 0px;
     }
 
     .seeMore{
         font-size: 18px;
-        margin: 0px 0px 55px 15px;
+        margin: 0px 0px 70px 15px;
     }
 
     .void {
         display: none;
     }
-}
-
-@media only screen and (max-width: 425px){
 }

@@ -53,6 +53,7 @@ body {
     left: 0;
     transition: left 1s;
     z-index: 0;
+    min-width: 320px;
 }
 
 .pageNavOpen {
