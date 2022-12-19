@@ -16,7 +16,7 @@ html(lang="fr")
                 H1(class="titlePage") PROJETS
                 .containerProjects
                     .descriptionPage
-                        p= "From Web Components and UI/UX animations to React.JS, Redux, Vue.JS, and Node.JS. Check out my latest web software development portfolio projects."
+                        p= "Développeur web Angular, PHP et Node.js. Jetez un œil à mes derniers projets de développement web."
                     .allSkills
                         each skill in allSkills
                             a(class="skill" href="#" id=`${skill.id}`)
@@ -24,7 +24,7 @@ html(lang="fr")
                                 p= skill.name
                                 .centrer
                     .explainFilter
-                        p= "Showing all projects. Use the filter to list them by skill or technology."
+                        p= "Utilisez les filtres pour lister par compétences et technologies"
                     include projects-liste.pug
 
         script(src="/javascript/loader/loader.js")
