@@ -36,6 +36,7 @@
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
+    padding: 0 10px;
 }
 
 .card .description h2 {
@@ -53,6 +54,12 @@
 .card .description p {
     font-size: 11px;
     margin: 10px 10px;
+}
+
+.card .description .githubLink{
+    position: absolute;
+    bottom: 2px;
+    right: 4px;
 }
 
 .skills {
