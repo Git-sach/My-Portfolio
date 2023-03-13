@@ -2,7 +2,12 @@ const skillsModel = require('../database/model/skills');
 const { Op } = require('sequelize');
 
 exports.skillsListe = () => {
-    return skillsModel.findAll();
+    return skillsModel.findAll({
+        order: [
+            ['favorite', 'DESC'],
+            ['name', 'ASC']
+        ]
+    });
 };
 
 exports.skillsListeIsVisibleProjects = () => {
