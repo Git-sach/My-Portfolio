@@ -26,6 +26,9 @@ Skills.init(
         is_visible_projects: {
             type: Sequelize.BOOLEAN
         },
+        favorite: {
+            type: Sequelize.BOOLEAN
+        }
     }, {
         sequelize,
         modelName: 'skills',
