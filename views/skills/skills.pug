@@ -5,6 +5,7 @@ html(lang="fr")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel='stylesheet', href='/css/loader.css')
         link(rel='stylesheet', href='/css/skills.css')
+        link(rel='stylesheet', href='/css/footer.css')
         script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
         script(src="/javascript/skills/skills.js")
         title My Portfolio
@@ -15,9 +16,12 @@ html(lang="fr")
                 include ../includes/navigation.pug
             .container
                 H1(class="titlePage") COMPETENCES
+                .descriptionPage
+                    p= "Découvrez tous les outils et langages de programmation que j'utilise pour mener à bien les projets sur lesquels je travaille."
                 .inputSearch
                     input(type="text" value="" class="customInput" id="search")
                 include skills-liste.pug
+            include ../includes/footer.pug
         script(src="/javascript/loader/loader.js")
         script(src="/javascript/navigation/navigation.js")
 

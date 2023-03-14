@@ -1,5 +1,10 @@
 @import './common.css';
 
+.descriptionPage {
+    padding: 0 30px;
+    margin-bottom: 50px;
+}
+
 .flexList {
     padding: 0;
     display: flex;

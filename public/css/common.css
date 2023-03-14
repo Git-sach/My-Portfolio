@@ -62,7 +62,7 @@ body {
     transition-timing-function: var(--transitionOpenNav);
 }
 
-h1, h2, p, a, li{
+h1, h2, h3, p, a, li{
     font-family: 'lato-light';
 }
 
@@ -98,10 +98,27 @@ a {
 }
 
 
+.descriptionPage {
+    text-align: start;
+}
+.descriptionPage p{
+    font-family: 'lato-regular';
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
 
 @media only screen and (max-width: 768px){
     .titlePage {
         font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 545px) {
+
+    .descriptionPage p{
+        font-size: 14px;
     }
 }
 

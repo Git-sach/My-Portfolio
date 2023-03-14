@@ -5,6 +5,7 @@ html(lang="fr")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel='stylesheet', href='/css/loader.css')
         link(rel='stylesheet', href='/css/projects.css')
+        link(rel='stylesheet', href='/css/footer.css')
         script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
         title My Portfolio
     body 
@@ -26,6 +27,7 @@ html(lang="fr")
                     .explainFilter
                         p= "Utilisez les filtres pour lister par compétences et technologies"
                     include projects-liste.pug
+            include ../includes/footer.pug
 
         script(src="/javascript/loader/loader.js")
         script(src="/javascript/navigation/navigation.js")

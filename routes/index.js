@@ -8,7 +8,10 @@ router.get('/', (req, res, next) => {
 });
 router.get('/accueil', (req, res, next) => {
     res.redirect('/');
-})
+});
+router.get('/contact', (req, res, next) => {
+    res.render('contact/contact')
+});
 
 router.use('/skills', skills_router);
 router.use('/experiences', experiences_router);

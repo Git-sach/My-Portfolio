@@ -102,15 +102,6 @@
     color: rgb(216, 216, 216);
 }
 
-.descriptionPage {
-    text-align: start;
-}
-
-.descriptionPage p{
-    font-family: 'lato-regular';
-    font-size: 20px;
-    line-height: 1.5;
-}
 
 .allSkills {
     width: 100%;
@@ -157,10 +148,6 @@
         Width: 100%;
         Height: auto;
         position: relative;
-    }
-
-    .descriptionPage p{
-        font-size: 14px;
     }
 
     .card .description h2 {

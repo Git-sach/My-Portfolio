@@ -5,6 +5,7 @@ html(lang="fr")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel='stylesheet', href='/css/loader.css')
         link(rel='stylesheet', href='/css/experiences.css')
+        link(rel='stylesheet', href='/css/footer.css')
         title My Portfolio
     body 
         include ../includes/loader.pug
@@ -37,6 +38,7 @@ html(lang="fr")
                             .right_side_carde
                                 p(class='number')= experience.number_of_months
                                 p(class='mois')= 'MOIS'
+            include ../includes/footer.pug
         script(src="/javascript/loader/loader.js")
         script(src="/javascript/navigation/navigation.js")
 

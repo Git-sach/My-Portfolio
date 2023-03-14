@@ -6,7 +6,7 @@ let loaderEnd = false;
 
 setTimeout(() => {
     timerEnd = true;
-}, 3000);
+}, 1000);
 
 window.addEventListener('load', () => {
     loaderEnd = true;

@@ -1,0 +1,74 @@
+@import './common.css';
+
+.containerContact {
+    max-width: 1080px;
+    margin: 30px 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.containerContact .leftContact {
+    width: 50%;
+}
+
+.containerContact .leftContact img{
+    width: 100%;
+}
+
+.containerContact .rightContact{
+    font-size: 23px;
+    text-align: left;
+    padding: 0 10px;
+    line-height: 35px;
+    width: 50%;
+    position: relative;
+}
+
+.containerContact .rightContact .descriptions{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    position: sticky;
+    top: 30px;
+    left: 0px;
+}
+
+
+.containerContact p{
+    margin-top: 0;
+}
+
+.containerContact button{
+    font-weight: bold;
+    height: 40px;
+    width: 170px;
+    border: none;
+    background-color: rgba(126, 158, 135, 0.3);
+    border-radius: 3px;
+    cursor: pointer;
+    background-image: url(/images/icones/icone_export.png);
+    background-position: 10px 45%;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.containerContact .followUs h3{
+    margin-bottom: 8px;
+}
+
+.containerContact .followUs svg{
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .containerContact .leftContact {
+        display: none;
+    }
+
+    .containerContact .rightContact{
+       width: 100%;
+    }
+}
