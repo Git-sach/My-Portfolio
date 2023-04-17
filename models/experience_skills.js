@@ -23,7 +23,10 @@ exports.skillsExperiencesListe = async () => {
     // });
 
     const response = experiencesModel.findAll({
-        include: [skillsModel, skills_libraryModel]
+        include: [skillsModel, skills_libraryModel],
+        order: [
+            ['date_debut', 'DESC'],
+        ]
     });
 
     return response;
